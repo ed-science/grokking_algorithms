@@ -1,13 +1,13 @@
 # You pass an array in, and it gets converted to a set.
-states_needed = set(["mt", "wa", "or", "id", "nv", "ut", "ca", "az"])
+states_needed = {"mt", "wa", "or", "id", "nv", "ut", "ca", "az"}
 
-stations = {}
-stations["kone"] = set(["id", "nv", "ut"])
-stations["ktwo"] = set(["wa", "id", "mt"])
-stations["kthree"] = set(["or", "nv", "ca"])
-stations["kfour"] = set(["nv", "ut"])
-stations["kfive"] = set(["ca", "az"])
-
+stations = {
+    "kone": {"id", "nv", "ut"},
+    "ktwo": {"wa", "id", "mt"},
+    "kthree": {"or", "nv", "ca"},
+    "kfour": {"nv", "ut"},
+    "kfive": {"ca", "az"},
+}
 final_stations = set()
 
 def my_set_covering(states_needed, stations):

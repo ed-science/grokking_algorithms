@@ -3,6 +3,5 @@ def max_(lst):
     return None
   if len(lst) == 1:
     return lst[0]
-  else:
-    sub_max = max_(lst[1:])
-    return lst[0] if lst[0] > sub_max else sub_max
+  sub_max = max_(lst[1:])
+  return max(lst[0], sub_max)

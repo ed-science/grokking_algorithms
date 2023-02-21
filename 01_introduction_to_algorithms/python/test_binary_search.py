@@ -20,7 +20,7 @@ list_with_1000_items = data["list_with_1000_items"]
 class TestBinarySearch(unittest.TestCase):
 
   def setUp(self):
-    print (".......... %s" % self._testMethodName)
+    print(f".......... {self._testMethodName}")
 
   # Checking the implementation of iterative binary search
   def test_iterative_binary_search_with_simple_list(self):

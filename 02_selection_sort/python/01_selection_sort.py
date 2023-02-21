@@ -13,10 +13,10 @@ def findSmallest(arr):
 # Sort array
 def selectionSort(arr):
   newArr = []
-  for i in range(len(arr)):
-      # Finds the smallest element in the array and adds it to the new array
-      smallest = findSmallest(arr)
-      newArr.append(arr.pop(smallest))
+  for _ in range(len(arr)):
+    # Finds the smallest element in the array and adds it to the new array
+    smallest = findSmallest(arr)
+    newArr.append(arr.pop(smallest))
   return newArr
 
 print(selectionSort([5, 3, 6, 2, 10]))
